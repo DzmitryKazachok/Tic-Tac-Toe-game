@@ -1,0 +1,162 @@
+body {
+    height: 800px;
+    background-color: lightgray;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.relative {
+    position: absolute;
+    top: 860px;
+    right: 120px;
+}
+.hide-container {
+    display: none;
+}
+.header {
+    color: #000;
+    text-align: center;
+    margin: 50px 0;
+    font-family: "Permanent Marker";
+}
+.enter-players {
+    font-family: 'Permanent Marker';
+    color: #605C5C;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    position: relative;
+}
+.input-field {
+    border: 2px solid black;
+    outline: none;
+    padding: 4px 8px;
+    margin: 0 0 10px 4px;
+    font-size: 18px;
+}
+.input-field:focus {
+    border: 2px solid red;
+}
+.submit-btn {
+    border: 2px solid black;
+    padding: 8px;
+    font-size: 18px;
+    width: 250px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+.submit-btn:active,
+.submit-btn:focus {
+    outline: none;
+    border: 2px solid red;
+}
+.submit-btn:hover {
+    background-color: whitesmoke;
+}
+.board___player-turn {
+    color: #605C5C;
+    text-align: center;
+    margin: 10px 0;
+    height: 54px;
+}
+
+.name--style {
+    font-size: 22px;
+    font-weight: 600;
+}
+.board__container {
+    width: 40vw;
+    max-width: 600px;
+    height: 40vw;
+    max-height: 600px;
+    background-color: cadetblue;
+    margin: 0 auto;
+    font-size: 0;
+    border: 2px solid black;
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+}
+.board__cell {
+    box-sizing: border-box;
+    width: calc(100% / 3);
+    height: calc(100% / 3);
+    display: inline-block;
+    font-size: 40px;
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+    vertical-align: top;
+    font-family: "Permanent Marker";
+}
+.board__cell--winner {
+    background-color: #f9738a;
+}
+.letter {
+    color: #eee;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Permanent Marker";
+}
+
+/* Winner Container */
+.reset {
+    text-align: center;
+    margin: 20px auto;    
+}
+
+.reset--hidden {
+    display: none;
+}
+
+.replay-btn {
+    width: 25%;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 12px;
+    word-spacing: 3px;
+    background-color: #fff;
+}
+
+.replay-btn:hover,
+.replay-btn:active {
+    outline: none;
+    color: #fff;
+    background-color: black;
+}
+
+.congratulations {
+    color: green;
+    font-size: 24px;
+}
+
+.u-r-winner {
+    font-size: 18px;
+    height: 18px;
+    line-height: 1;
+    margin: 2px 0;
+}
+
+@media only screen and (max-width: 575px) {
+    .board__container {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    /* .board__cell {
+        font-size: 16px;
+        padding: 5px;
+    } */
+
+    .replay-btn {
+        width: 50%;
+        padding: 10px 0;
+    }
+}
